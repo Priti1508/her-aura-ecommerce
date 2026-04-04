@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "title": "Luna Gold Chain Necklace",
+    "price": 128,
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80"
+    ],
+    "category": "Jewelry",
+    "description": "Delicate 18k gold–plated chain with a soft satin finish. Designed for everyday layering or a refined solo statement.",
+    "rating": 4.2,
+    "compareAtPrice": 143
+  },
+  {
+    "id": "2",
+    "title": "Noir Silk Evening Scarf",
+    "price": 89,
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80",
+      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=800&q=80",
+      "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80"
+    ],
+    "category": "Accessories",
+    "description": "Pure silk with a deep charcoal drape. Featherlight warmth for evenings out or travel.",
+    "rating": 4.3,
+    "compareAtPrice": 94
+  },
+  {
+    "id": "3",
+    "title": "Velvet Rose Eau de Parfum",
+    "price": 156,
+    "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80",
+      "https://images.unsplash.com/photo-1595425970377-c970029bf1e6?w=800&q=80",
+      "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=800&q=80"
+    ],
+    "category": "Fragrance",
+    "description": "Damask rose, white musk, and a whisper of amber. Long-lasting, skin-close, and unmistakably modern.",
+    "rating": 4.4,
+    "compareAtPrice": 165
+  },
+  {
+    "id": "4",
+    "title": "Pearl Orbit Studs",
+    "price": 72,
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+      "https://images.unsplash.com/photo-1617032213177-6dd16aa4b5ad?w=800&q=80",
+      "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80"
+    ],
+    "category": "Jewelry",
+    "description": "Freshwater pearls set in brushed sterling silver. Subtle orbit detail catches light at every angle.",
+    "rating": 4.4,
+    "compareAtPrice": 81
+  },
+  {
+    "id": "5",
+    "title": "Aurora Face Oil",
+    "price": 64,
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80",
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80",
+      "https://images.unsplash.com/photo-1570194065650-d99fb4b38b14?w=800&q=80"
+    ],
+    "category": "Skincare",
+    "description": "Cold-pressed botanicals for dewy, calm skin. Use morning or night after cleansing.",
+    "rating": 4.5,
+    "compareAtPrice": 68
+  },
+  {
+    "id": "6",
+    "title": "Crescent Leather Tote",
+    "price": 245,
+    "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80",
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80",
+      "https://images.unsplash.com/photo-1564422170194-896b46d2a58d?w=800&q=80"
+    ],
+    "category": "Accessories",
+    "description": "Italian leather with a sculptural crescent silhouette. Fits a laptop, journal, and the essentials.",
+    "rating": 4.6,
+    "compareAtPrice": 260
+  },
+  {
+    "id": "7",
+    "title": "Santal Mist Room Spray",
+    "price": 42,
+    "image": "https://images.unsplash.com/photo-1608571423902-eed4a5a810eb?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1608571423902-eed4a5a810eb?w=800&q=80",
+      "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=800&q=80",
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80"
+    ],
+    "category": "Fragrance",
+    "description": "Sandalwood, fig leaf, and soft smoke. A few spritzes transform your space in seconds.",
+    "rating": 4.7,
+    "compareAtPrice": 47
+  },
+  {
+    "id": "8",
+    "title": "Meridian Bangle Set",
+    "price": 98,
+    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80"
+    ],
+    "category": "Jewelry",
+    "description": "Three slim bangles in mixed metals. Stack, split, or gift one to someone you love.",
+    "rating": 4.8,
+    "compareAtPrice": 104
+  },
+  {
+    "id": "9",
+    "title": "Cloud Cream Cleanser",
+    "price": 38,
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80",
+      "https://images.unsplash.com/photo-1570194065650-d99fb4b38b14?w=800&q=80",
+      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80"
+    ],
+    "category": "Skincare",
+    "description": "A cushiony gel-cream that melts away makeup without stripping. For all skin types.",
+    "rating": 4.2,
+    "compareAtPrice": 40
+  },
+  {
+    "id": "10",
+    "title": "Obsidian Signet Ring",
+    "price": 112,
+    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+      "https://images.unsplash.com/photo-1617032213177-6dd16aa4b5ad?w=800&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80"
+    ],
+    "category": "Jewelry",
+    "description": "Matte black stone in a minimal bezel. Unisex sizing with a comfortable low profile.",
+    "rating": 4.3,
+    "compareAtPrice": 125
+  },
+  {
+    "id": "11",
+    "title": "Linen Travel Pouch",
+    "price": 54,
+    "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=800&q=80",
+      "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80"
+    ],
+    "category": "Accessories",
+    "description": "Washed linen with a gold-tone zip. Perfect for cables, cosmetics, or a minimalist clutch.",
+    "rating": 4.4,
+    "compareAtPrice": 57
+  },
+  {
+    "id": "12",
+    "title": "Citrus Grove Body Lotion",
+    "price": 48,
+    "image": "https://images.unsplash.com/photo-1570194065650-d99fb4b38b14?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1570194065650-d99fb4b38b14?w=800&q=80",
+      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80",
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80"
+    ],
+    "category": "Skincare",
+    "description": "Neroli, bergamot, and shea butter. Fast-absorbing hydration with a bright, clean finish.",
+    "rating": 4.4,
+    "compareAtPrice": 51
+  }
+]
