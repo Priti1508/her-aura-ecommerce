@@ -106,8 +106,8 @@ export function Home() {
     <>
       <HeroCarousel slides={heroSlides} spotlight={heroSpotlight} />
 
-      <section className="border-b border-cream-dark/60 bg-cream py-14 sm:py-16">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:gap-8 lg:px-8">
+      <section className="border-b border-cream-dark/60 bg-cream py-12 sm:py-14 md:py-16">
+        <div className="mx-auto grid max-w-7xl gap-8 px-3 sm:grid-cols-2 sm:gap-10 sm:px-6 lg:grid-cols-4 lg:gap-8 lg:px-8">
           {features.map(({ icon: Icon, title, body }) => (
             <div key={title} className="flex gap-4">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-cream-dark/70 bg-cream-muted text-brand">
@@ -126,11 +126,11 @@ export function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
+      <section className="mx-auto max-w-7xl px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <div className="grid gap-5 sm:gap-6 lg:grid-cols-2 lg:gap-8">
           <Link
             to="/shop?category=Jewelry"
-            className="group relative flex min-h-[280px] overflow-hidden rounded-3xl bg-brand shadow-lg shadow-brand/20 sm:min-h-[320px]"
+            className="group relative flex min-h-[240px] overflow-hidden rounded-2xl bg-brand shadow-lg shadow-brand/20 min-[400px]:min-h-[280px] min-[400px]:rounded-3xl sm:min-h-[300px] md:min-h-[320px]"
           >
             <img
               src="https://images.unsplash.com/photo-1617032213177-6dd16aa4b5ad?w=900&q=80"
@@ -138,14 +138,14 @@ export function Home() {
               className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand via-brand/50 to-transparent sm:bg-gradient-to-r" />
-            <div className="relative mt-auto flex w-full flex-col p-6 sm:justify-end sm:p-8">
+            <div className="relative mt-auto flex w-full flex-col p-5 sm:justify-end sm:p-8">
               <span className="w-fit rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand">
                 15% off
               </span>
-              <h3 className="mt-4 font-display text-2xl font-semibold text-cream sm:text-3xl">
+              <h3 className="mt-3 break-words font-display text-xl font-semibold text-cream min-[400px]:mt-4 min-[400px]:text-2xl sm:text-3xl">
                 Fine jewelry edit
               </h3>
-              <p className="mt-2 max-w-sm text-sm text-cream/80">
+              <p className="mt-2 max-w-sm text-sm leading-snug text-cream/80">
                 Chains, pearls, and rings — stack them or wear one standout
                 piece.
               </p>
@@ -158,7 +158,7 @@ export function Home() {
 
           <Link
             to="/shop?category=Fragrance"
-            className="group relative flex min-h-[280px] overflow-hidden rounded-3xl bg-brand shadow-lg shadow-brand/20 sm:min-h-[320px]"
+            className="group relative flex min-h-[240px] overflow-hidden rounded-2xl bg-brand shadow-lg shadow-brand/20 min-[400px]:min-h-[280px] min-[400px]:rounded-3xl sm:min-h-[300px] md:min-h-[320px]"
           >
             <img
               src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=900&q=80"
@@ -166,14 +166,14 @@ export function Home() {
               className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand via-brand/50 to-transparent sm:bg-gradient-to-r" />
-            <div className="relative mt-auto flex w-full flex-col p-6 sm:justify-end sm:p-8">
+            <div className="relative mt-auto flex w-full flex-col p-5 sm:justify-end sm:p-8">
               <span className="w-fit rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand">
                 New
               </span>
-              <h3 className="mt-4 font-display text-2xl font-semibold text-cream sm:text-3xl">
+              <h3 className="mt-3 break-words font-display text-xl font-semibold text-cream min-[400px]:mt-4 min-[400px]:text-2xl sm:text-3xl">
                 Scent & atmosphere
               </h3>
-              <p className="mt-2 max-w-sm text-sm text-cream/80">
+              <p className="mt-2 max-w-sm text-sm leading-snug text-cream/80">
                 Perfumes and room mists that layer beautifully from day to
                 evening.
               </p>
@@ -186,9 +186,9 @@ export function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
+      <section className="mx-auto max-w-7xl px-3 pb-16 sm:px-6 sm:pb-20 lg:px-8 lg:pb-28">
         <div className="text-center">
-          <h2 className="font-display text-3xl font-semibold text-brand sm:text-4xl">
+          <h2 className="font-display text-[clamp(1.5rem,4vw+1rem,2.25rem)] font-semibold text-brand sm:text-4xl">
             Best sellers
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-brand-muted">
@@ -196,13 +196,18 @@ export function Home() {
             vanity or in the jewelry box.
           </p>
         </div>
-        <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 sm:mt-14 sm:gap-8 lg:grid-cols-4">
           {bestSellers.map((p) => (
             <ProductCard key={p.id} product={p} variant="storefront" />
           ))}
         </div>
-        <div className="mt-12 text-center">
-          <ButtonLink to="/shop" size="lg" variant="outline" className="inline-flex gap-2">
+        <div className="mt-10 text-center sm:mt-12">
+          <ButtonLink
+            to="/shop"
+            size="lg"
+            variant="outline"
+            className="inline-flex w-full max-w-xs justify-center gap-2 min-[400px]:w-auto"
+          >
             View all products
             <ArrowRightIcon className="h-4 w-4" />
           </ButtonLink>
@@ -211,21 +216,21 @@ export function Home() {
 
       <section
         id="categories"
-        className="scroll-mt-28 border-y border-cream-dark/80 bg-cream-muted py-20 sm:py-24"
+        className="scroll-mt-24 border-y border-cream-dark/80 bg-cream-muted py-14 sm:scroll-mt-28 sm:py-20 md:py-24"
       >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-display text-3xl font-semibold text-brand sm:text-4xl">
+        <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
+          <h2 className="text-center font-display text-[clamp(1.5rem,4vw+1rem,2.25rem)] font-semibold text-brand sm:text-4xl">
             Shop by category
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-center text-brand-muted">
             Find your lane — each edit is intentionally small and refined.
           </p>
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:mt-14 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
             {categories.map((cat) => (
               <Link
                 key={cat}
                 to={`/shop?category=${encodeURIComponent(cat)}`}
-                className="group flex items-center justify-between rounded-2xl border border-cream-dark/70 bg-cream p-7 shadow-sm transition-all duration-300 hover:border-accent/50 hover:shadow-md"
+                className="group flex items-center justify-between gap-3 rounded-2xl border border-cream-dark/70 bg-cream p-5 shadow-sm transition-all duration-300 hover:border-accent/50 hover:shadow-md sm:p-7"
               >
                 <span className="font-display text-lg font-medium text-brand group-hover:text-accent">
                   {cat}
@@ -237,14 +242,14 @@ export function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-        <div className="relative overflow-hidden rounded-3xl bg-brand px-6 py-16 text-center sm:px-12 sm:py-20 lg:px-16">
+      <section className="mx-auto max-w-7xl px-3 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="relative overflow-hidden rounded-2xl bg-brand px-4 py-12 text-center min-[400px]:rounded-3xl sm:px-10 sm:py-16 md:px-12 md:py-20 lg:px-16">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(197,160,89,0.2),transparent_55%)]" />
           <div className="relative">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">
               Limited time
             </p>
-            <h2 className="mt-5 font-display text-3xl font-semibold text-cream sm:text-4xl">
+            <h2 className="mt-5 break-words font-display text-2xl font-semibold text-cream min-[400px]:text-3xl sm:text-4xl">
               Complimentary gift wrap on orders over $150
             </h2>
             <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-cream/75 sm:text-base">

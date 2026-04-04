@@ -314,14 +314,14 @@ export function ProductListing() {
   }
 
   return (
-    <div className="min-h-screen bg-page">
-      <div className="flex min-h-screen flex-col lg:flex-row">
-        <aside className="hidden w-[300px] shrink-0 bg-brand lg:block lg:sticky lg:top-0 lg:max-h-screen lg:overflow-y-auto lg:px-7 lg:py-10 xl:w-[320px] xl:px-9">
+    <div className="min-h-dvh w-full max-w-[100vw] overflow-x-clip bg-page">
+      <div className="flex min-h-dvh flex-col lg:flex-row">
+        <aside className="hidden w-[min(100%,300px)] max-w-full shrink-0 bg-brand lg:block lg:sticky lg:top-[5.25rem] lg:max-h-[calc(100dvh-5.5rem)] lg:overflow-y-auto lg:self-start lg:px-6 lg:py-8 xl:top-[4.75rem] xl:max-h-[calc(100dvh-5rem)] xl:w-[320px] xl:px-9 xl:py-10">
           <SidebarFilters {...sidebarProps} />
         </aside>
 
-        <main className="min-w-0 flex-1 px-4 py-8 sm:px-6 lg:px-10 lg:py-10">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+        <main className="min-w-0 flex-1 px-3 py-6 sm:px-6 sm:py-8 lg:px-10 lg:py-10">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4 md:gap-6">
             <div className="flex items-center gap-3">
               <Link
                 to="/"
@@ -356,14 +356,14 @@ export function ProductListing() {
               />
             </form>
 
-            <p className="shrink-0 text-center text-sm font-medium tabular-nums text-brand-muted sm:text-right">
+            <p className="shrink-0 text-center text-xs font-medium tabular-nums text-brand-muted min-[400px]:text-sm sm:text-right">
               {filtered.length} result{filtered.length === 1 ? '' : 's'}
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-8 sm:mt-10">
             {loading ? (
-              <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
+              <div className="grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
                 {Array.from({ length: 8 }).map((_, i) => (
                   <ProductCardSkeleton key={i} variant="listing" />
                 ))}
@@ -384,7 +384,7 @@ export function ProductListing() {
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
+              <div className="grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
                 {filtered.map((p) => (
                   <ProductCard key={p.id} product={p} variant="listing" />
                 ))}
@@ -402,7 +402,7 @@ export function ProductListing() {
             aria-label="Close filters"
             onClick={() => setMobileFiltersOpen(false)}
           />
-          <div className="absolute left-0 top-0 flex h-full w-full max-w-sm flex-col bg-brand shadow-2xl">
+          <div className="absolute left-0 top-0 flex h-full max-h-dvh w-full max-w-[min(100%,24rem)] flex-col bg-brand shadow-2xl">
             <div className="flex items-center justify-end border-b border-cream/15 p-4">
               <button
                 type="button"

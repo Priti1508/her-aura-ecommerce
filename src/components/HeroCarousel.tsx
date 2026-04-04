@@ -64,7 +64,7 @@ export function HeroCarousel({ slides, spotlight }: HeroCarouselProps) {
 
   return (
     <section
-      className="relative bg-brand"
+      className="relative w-full max-w-[100vw] overflow-hidden bg-brand"
       aria-roledescription="carousel"
       aria-label="Featured highlights"
       onMouseEnter={() => setPaused(true)}
@@ -86,7 +86,7 @@ export function HeroCarousel({ slides, spotlight }: HeroCarouselProps) {
               aria-hidden={i !== active}
               inert={i !== active ? true : undefined}
             >
-              <div className="relative aspect-[4/5] min-h-[min(88vh,680px)] sm:aspect-[2.2/1] sm:min-h-[min(78vh,600px)] lg:aspect-[2.4/1]">
+              <div className="relative aspect-[4/5] min-h-[min(72svh,520px)] sm:aspect-[2.2/1] sm:min-h-[min(68svh,480px)] md:min-h-[min(70svh,520px)] lg:aspect-[2.4/1] lg:min-h-[min(72svh,560px)]">
                 <img
                   src={s.image}
                   alt={s.imageAlt ?? ''}
@@ -97,22 +97,22 @@ export function HeroCarousel({ slides, spotlight }: HeroCarouselProps) {
                   aria-hidden
                 />
                 <div className="absolute inset-0 flex items-end sm:items-center">
-                  <div className="mx-auto w-full max-w-7xl px-4 pb-14 pt-8 text-left sm:px-6 sm:pb-20 sm:pt-0 lg:px-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">
+                  <div className="mx-auto w-full max-w-7xl px-3 pb-12 pt-6 text-left min-[400px]:px-4 sm:px-6 sm:pb-20 sm:pt-0 lg:px-8">
+                    <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-accent min-[400px]:text-xs min-[400px]:tracking-[0.25em]">
                       {s.eyebrow}
                     </p>
-                    <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-[1.15] tracking-tight text-cream sm:text-4xl lg:text-5xl xl:text-6xl">
+                    <h2 className="mt-3 max-w-2xl font-display text-[clamp(1.5rem,5.5vw+0.6rem,3.75rem)] font-semibold leading-[1.12] tracking-tight text-cream sm:mt-4">
                       {s.title}
                     </h2>
-                    <p className="mt-5 max-w-lg text-sm leading-relaxed text-cream/85 sm:text-base lg:text-lg">
+                    <p className="mt-4 max-w-lg text-sm leading-relaxed text-cream/85 min-[400px]:mt-5 sm:text-base lg:text-lg">
                       {s.subtitle}
                     </p>
-                    <div className="mt-10 flex flex-wrap items-center gap-3 sm:gap-4">
+                    <div className="mt-8 flex w-full max-w-md flex-col items-stretch gap-3 min-[480px]:flex-row min-[480px]:flex-wrap min-[480px]:items-center sm:mt-10 sm:max-w-none sm:gap-4">
                       <ButtonLink
                         to={s.href}
                         variant="hero"
                         size="lg"
-                        className="inline-flex gap-2 shadow-lg shadow-black/25"
+                        className="inline-flex w-full justify-center gap-2 shadow-lg shadow-black/25 min-[480px]:w-auto min-[480px]:justify-center"
                       >
                         {s.cta}
                         <ArrowRightIcon className="h-4 w-4 shrink-0" />
@@ -122,7 +122,7 @@ export function HeroCarousel({ slides, spotlight }: HeroCarouselProps) {
                           to={s.secondaryCta.href}
                           variant="heroGhost"
                           size="lg"
-                          className="inline-flex gap-2"
+                          className="inline-flex w-full justify-center gap-2 min-[480px]:w-auto"
                         >
                           {s.secondaryCta.label}
                           <ArrowRightIcon className="h-4 w-4 shrink-0" />
@@ -157,11 +157,11 @@ export function HeroCarousel({ slides, spotlight }: HeroCarouselProps) {
 
         {count > 1 && (
           <>
-            <div className="pointer-events-none absolute inset-x-0 top-1/2 z-10 flex -translate-y-1/2 justify-between px-2 sm:px-4">
+            <div className="pointer-events-none absolute inset-x-0 top-1/2 z-10 flex -translate-y-1/2 justify-between px-1 min-[400px]:px-2 sm:px-4">
               <button
                 type="button"
                 onClick={goPrev}
-                className="pointer-events-auto flex h-11 w-11 items-center justify-center rounded-full border border-cream/20 bg-cream/10 text-cream backdrop-blur-sm transition-colors hover:border-accent/60 hover:bg-cream/20 hover:text-accent"
+                className="pointer-events-auto flex h-10 w-10 touch-manipulation items-center justify-center rounded-full border border-cream/20 bg-cream/10 text-cream backdrop-blur-sm transition-colors hover:border-accent/60 hover:bg-cream/20 hover:text-accent sm:h-11 sm:w-11"
                 aria-label="Previous slide"
               >
                 <ChevronLeftIcon className="h-6 w-6" />
@@ -169,7 +169,7 @@ export function HeroCarousel({ slides, spotlight }: HeroCarouselProps) {
               <button
                 type="button"
                 onClick={goNext}
-                className="pointer-events-auto flex h-11 w-11 items-center justify-center rounded-full border border-cream/20 bg-cream/10 text-cream backdrop-blur-sm transition-colors hover:border-accent/60 hover:bg-cream/20 hover:text-accent"
+                className="pointer-events-auto flex h-10 w-10 touch-manipulation items-center justify-center rounded-full border border-cream/20 bg-cream/10 text-cream backdrop-blur-sm transition-colors hover:border-accent/60 hover:bg-cream/20 hover:text-accent sm:h-11 sm:w-11"
                 aria-label="Next slide"
               >
                 <ChevronRightIcon className="h-6 w-6" />

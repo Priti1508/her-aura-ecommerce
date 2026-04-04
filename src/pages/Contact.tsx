@@ -27,8 +27,8 @@ export function Contact() {
   }
 
   return (
-    <div className="min-h-screen bg-page py-10 sm:py-14 lg:py-16">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <div className="min-h-dvh w-full max-w-[100vw] overflow-x-clip bg-page py-8 sm:py-12 lg:py-16">
+      <div className="mx-auto w-full max-w-5xl px-3 sm:px-6 lg:px-8">
         <Link
           to="/"
           className="inline-flex items-center gap-2 text-sm font-medium tracking-wide text-brand-muted transition-colors hover:text-brand"
@@ -37,9 +37,9 @@ export function Contact() {
           Back to home
         </Link>
 
-        <div className="mt-8 overflow-hidden rounded-3xl border border-cream-dark/35 bg-cream shadow-2xl shadow-brand/15 sm:mt-10 lg:flex lg:min-h-[560px]">
-          <section className="bg-brand px-6 py-10 text-cream sm:px-8 sm:py-12 lg:w-[44%] lg:shrink-0 lg:rounded-none lg:py-14">
-            <h1 className="font-display text-3xl font-semibold sm:text-4xl">
+        <div className="mt-8 overflow-hidden rounded-2xl border border-cream-dark/35 bg-cream shadow-2xl shadow-brand/15 min-[400px]:rounded-3xl sm:mt-10 lg:flex lg:min-h-[560px]">
+          <section className="bg-brand px-5 py-8 text-cream sm:px-8 sm:py-12 lg:w-[44%] lg:shrink-0 lg:rounded-none lg:py-14">
+            <h1 className="font-display text-2xl font-semibold min-[400px]:text-3xl sm:text-4xl">
               Get in touch
             </h1>
             <p className="mt-4 text-sm leading-relaxed text-cream/85 sm:text-base">

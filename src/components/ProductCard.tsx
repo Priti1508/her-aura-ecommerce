@@ -33,7 +33,7 @@ export function ProductCard({ product, variant = 'full' }: ProductCardProps) {
   return (
     <Link
       to={`/product/${product.id}`}
-      className={`group flex flex-col overflow-hidden rounded-2xl border bg-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl ${
+      className={`group flex max-w-full flex-col overflow-hidden rounded-2xl border bg-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl ${
         isListing
           ? 'border-cream-dark/40 hover:border-brand/25'
           : 'border-cream-dark/50 shadow-brand/[0.05] hover:border-accent/40 hover:shadow-brand/[0.08]'
@@ -66,7 +66,7 @@ export function ProductCard({ product, variant = 'full' }: ProductCardProps) {
           </p>
         )}
         <h3
-          className={`font-display leading-snug text-brand transition-colors group-hover:text-accent ${
+          className={`break-words font-display leading-snug text-brand transition-colors group-hover:text-accent ${
             isListing
               ? 'mt-1 text-lg font-semibold sm:text-xl'
               : isStorefront

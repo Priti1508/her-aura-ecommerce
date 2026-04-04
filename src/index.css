@@ -19,9 +19,18 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: clip;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   body {
-    @apply m-0 min-h-screen bg-cream font-sans text-brand antialiased;
+    @apply m-0 min-h-dvh bg-cream font-sans text-brand antialiased;
+    overflow-x: clip;
+  }
+
+  img,
+  video {
+    max-width: 100%;
   }
 }

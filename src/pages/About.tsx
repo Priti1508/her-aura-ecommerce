@@ -25,8 +25,8 @@ const studioImage =
 
 export function About() {
   return (
-    <div className="bg-cream">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <div className="w-full max-w-[100vw] overflow-x-clip bg-cream">
+      <div className="mx-auto max-w-6xl px-3 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-14">
         <Link
           to="/"
           className="inline-flex items-center gap-2 text-sm font-medium tracking-wide text-brand-muted transition-colors hover:text-brand"
@@ -42,7 +42,7 @@ export function About() {
               aria-hidden
             />
             <div
-              className="pointer-events-none absolute -right-4 bottom-8 h-48 w-48 rounded-full border border-cream-dark/30 opacity-60"
+              className="pointer-events-none absolute -right-4 bottom-8 hidden h-48 w-48 rounded-full border border-cream-dark/30 opacity-60 min-[400px]:block"
               style={{
                 backgroundImage: `repeating-linear-gradient(
                   -12deg,
@@ -67,7 +67,7 @@ export function About() {
             <p className="font-display text-lg italic text-accent">
               Elevating the rituals of every day
             </p>
-            <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-brand sm:text-5xl">
+            <h1 className="mt-4 break-words font-display text-3xl font-semibold tracking-tight text-brand min-[400px]:text-4xl sm:text-5xl">
               About us
             </h1>
             <div className="mt-8 space-y-5 text-base leading-relaxed text-brand-muted">
@@ -102,7 +102,7 @@ export function About() {
             Three principles guide how we choose, present, and stand behind
             every piece.
           </p>
-          <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 gap-5 min-[600px]:grid-cols-3 sm:mt-12 sm:gap-6">
             {values.map(({ title, body }) => (
               <article
                 key={title}

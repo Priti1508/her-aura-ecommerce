@@ -30,17 +30,17 @@ export function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-cream-dark/70 bg-cream/95 backdrop-blur-md">
-      <div className="mx-auto grid h-16 max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 sm:h-[4.25rem] sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 w-full max-w-[100vw] border-b border-cream-dark/70 bg-cream/95 pt-[env(safe-area-inset-top,0px)] backdrop-blur-md">
+      <div className="mx-auto grid h-14 min-h-[3.5rem] max-w-7xl grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 px-3 sm:h-16 sm:gap-3 sm:px-6 lg:h-[4.25rem] lg:px-8">
         <Link
           to="/"
-          className="flex w-fit shrink-0 items-center transition-opacity hover:opacity-90"
+          className="flex min-w-0 max-w-full shrink-0 items-center transition-opacity hover:opacity-90"
           aria-label="HER AURA home"
         >
           <img
             src={logoImg}
             alt="HER AURA"
-            className="h-9 w-auto rounded-sm object-contain sm:h-10"
+            className="h-8 max-h-9 w-auto max-w-[min(9rem,46vw)] rounded-sm object-contain object-left sm:h-9 sm:max-h-10 lg:h-10"
           />
         </Link>
 
@@ -80,7 +80,7 @@ export function Navbar() {
           </NavLink>
         </nav>
 
-        <div className="flex items-center justify-end gap-0.5 sm:gap-1">
+        <div className="flex min-w-0 shrink-0 items-center justify-end gap-0.5 sm:gap-1">
           <button
             type="button"
             onClick={() => setSearchOpen((o) => !o)}
@@ -113,10 +113,10 @@ export function Navbar() {
       </div>
 
       {searchOpen && (
-        <div className="border-t border-cream-dark/50 bg-cream px-4 py-3 sm:px-6">
+        <div className="border-t border-cream-dark/50 bg-cream px-3 py-3 sm:px-6">
           <form
             onSubmit={submitSearch}
-            className="mx-auto flex max-w-2xl gap-2"
+            className="mx-auto flex max-w-2xl flex-col gap-2 sm:flex-row sm:items-center"
             role="search"
           >
             <input
@@ -130,7 +130,7 @@ export function Navbar() {
             />
             <button
               type="submit"
-              className="shrink-0 rounded-full bg-brand px-5 py-2.5 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-brand-hover"
+              className="h-11 shrink-0 rounded-full bg-brand px-5 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-brand-hover sm:h-auto sm:py-2.5"
             >
               Search
             </button>
@@ -139,10 +139,10 @@ export function Navbar() {
       )}
 
       <nav
-        className="flex border-t border-cream-dark/50 px-4 py-2 xl:hidden"
+        className="flex border-t border-cream-dark/50 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom,0px))] sm:px-4 xl:hidden"
         aria-label="Mobile"
       >
-        <div className="mx-auto flex w-full max-w-lg flex-wrap justify-center gap-x-5 gap-y-2">
+        <div className="mx-auto flex w-full max-w-lg flex-wrap justify-center gap-x-3 gap-y-2 sm:gap-x-5">
           <Link
             to="/#categories"
             className="text-sm font-medium tracking-wide text-brand-muted"

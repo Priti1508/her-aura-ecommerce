@@ -6,8 +6,8 @@ import {
 
 export function Footer() {
   return (
-    <footer className="border-t border-brand/20 bg-brand text-cream">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <footer className="w-full max-w-[100vw] overflow-x-clip border-t border-brand/20 bg-brand pb-[env(safe-area-inset-bottom,0px)] text-cream">
+      <div className="mx-auto max-w-7xl px-3 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2" id="about-footer">
             <p className="font-display text-xl font-semibold tracking-wide text-cream">
@@ -72,7 +72,7 @@ export function Footer() {
                 <span>Los Angeles, CA</span>
               </li>
             </ul>
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
               <a
                 href="https://instagram.com"
                 target="_blank"

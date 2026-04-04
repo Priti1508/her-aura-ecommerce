@@ -100,7 +100,7 @@ export function ProductDetail() {
     .slice(0, 3)
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+    <div className="mx-auto w-full max-w-7xl px-3 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12">
       <Link
         to="/shop"
         className="inline-flex items-center gap-1 text-sm font-medium tracking-wide text-brand-muted transition-colors hover:text-accent"
@@ -109,7 +109,7 @@ export function ProductDetail() {
         Back to shop
       </Link>
 
-      <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-14">
+      <div className="mt-6 grid gap-8 sm:mt-8 sm:gap-10 lg:grid-cols-2 lg:gap-14">
         <div>
           <div className="overflow-hidden rounded-2xl border border-cream-dark/60 bg-cream-muted shadow-lg shadow-brand/10">
             <img
@@ -118,7 +118,7 @@ export function ProductDetail() {
               className="aspect-square w-full object-cover transition-opacity duration-300"
             />
           </div>
-          <div className="mt-4 flex gap-3 overflow-x-auto pb-2">
+          <div className="mt-4 flex gap-2 overflow-x-auto overscroll-x-contain pb-2 [-webkit-overflow-scrolling:touch] sm:gap-3">
             {images.map((src, i) => (
               <button
                 key={src}
@@ -140,7 +140,7 @@ export function ProductDetail() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
             {product.category}
           </p>
-          <h1 className="mt-2 font-display text-3xl font-semibold text-brand sm:text-4xl">
+          <h1 className="mt-2 break-words font-display text-2xl font-semibold text-brand min-[400px]:text-3xl sm:text-4xl">
             {product.title}
           </h1>
           <div className="mt-4 flex flex-wrap items-baseline gap-3">
@@ -192,7 +192,7 @@ export function ProductDetail() {
             </div>
             <Button
               size="lg"
-              className="min-w-[200px]"
+              className="w-full min-[400px]:w-auto min-[400px]:min-w-[200px]"
               onClick={handleAddToCart}
             >
               {addedFlash ? 'Added to cart' : 'Add to cart'}
@@ -210,7 +210,7 @@ export function ProductDetail() {
           <h2 className="font-display text-2xl font-semibold text-brand">
             You may also like
           </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-3">
+          <div className="mt-8 grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 sm:grid-cols-3">
             {related.map((p) => (
               <Link
                 key={p.id}

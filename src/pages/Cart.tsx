@@ -16,7 +16,7 @@ export function Cart() {
 
   if (items.length === 0) {
     return (
-      <div className="mx-auto max-w-lg px-4 py-20 text-center sm:py-28">
+      <div className="mx-auto max-w-lg px-3 py-16 text-center sm:px-4 sm:py-24 md:py-28">
         <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-cream-muted text-brand-muted">
           <ShoppingBagIcon className="h-10 w-10" />
         </div>
@@ -35,7 +35,7 @@ export function Cart() {
   }
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <div className="mx-auto w-full max-w-7xl px-3 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-14">
       <h1 className="font-display text-3xl font-semibold text-brand sm:text-4xl">
         Cart
       </h1>
@@ -46,11 +46,11 @@ export function Cart() {
           {items.map(({ product, quantity }) => (
             <li
               key={product.id}
-              className="flex gap-4 rounded-2xl border border-cream-dark/60 bg-cream p-4 shadow-sm transition-shadow hover:shadow-md sm:p-5"
+              className="flex flex-col gap-4 rounded-2xl border border-cream-dark/60 bg-cream p-4 shadow-sm transition-shadow hover:shadow-md min-[500px]:flex-row sm:p-5"
             >
               <Link
                 to={`/product/${product.id}`}
-                className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl bg-cream-muted sm:h-28 sm:w-28"
+                className="relative mx-auto h-28 w-28 shrink-0 overflow-hidden rounded-xl bg-cream-muted min-[500px]:mx-0 min-[500px]:h-24 min-[500px]:w-24 sm:h-28 sm:w-28"
               >
                 <img
                   src={product.image}
@@ -58,11 +58,11 @@ export function Cart() {
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </Link>
-              <div className="flex min-w-0 flex-1 flex-col sm:flex-row sm:items-center sm:justify-between sm:gap-4">
-                <div className="min-w-0">
+              <div className="flex min-w-0 flex-1 flex-col min-[500px]:flex-row min-[500px]:items-center min-[500px]:justify-between min-[500px]:gap-4">
+                <div className="min-w-0 text-center min-[500px]:text-left">
                   <Link
                     to={`/product/${product.id}`}
-                    className="font-display font-medium text-brand transition-colors hover:text-accent"
+                    className="break-words font-display font-medium text-brand transition-colors hover:text-accent"
                   >
                     {product.title}
                   </Link>
@@ -73,7 +73,7 @@ export function Cart() {
                     {formatPrice(product.price)} each
                   </p>
                 </div>
-                <div className="mt-4 flex items-center gap-3 sm:mt-0">
+                <div className="mt-4 flex items-center justify-center gap-3 min-[500px]:mt-0 min-[500px]:justify-start">
                   <div className="flex items-center rounded-full border border-cream-dark bg-cream-muted p-0.5">
                     <button
                       type="button"
@@ -113,8 +113,8 @@ export function Cart() {
           ))}
         </ul>
 
-        <aside className="lg:w-96 lg:shrink-0">
-          <div className="sticky top-28 rounded-2xl border border-cream-dark/60 bg-cream-muted p-6 shadow-sm">
+        <aside className="w-full lg:w-96 lg:shrink-0">
+          <div className="rounded-2xl border border-cream-dark/60 bg-cream-muted p-5 shadow-sm sm:p-6 lg:sticky lg:top-24 lg:max-h-[calc(100dvh-6rem)] lg:overflow-y-auto xl:top-20">
             <h2 className="font-display text-lg font-semibold text-brand">
               Order summary
             </h2>
